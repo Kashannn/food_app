@@ -43,3 +43,13 @@ TextStyle kStyleBlack24500 = GoogleFonts.poppins(
   color: kColorBlack,
   fontWeight: FontWeight.w500,
 );
+TextStyle kStyleBlack20700 = GoogleFonts.poppins(
+  fontSize: 20.sp,
+  color: kColorBlack,
+  fontWeight: FontWeight.w700,
+);
+TextStyle kStyleBlack20500 = GoogleFonts.roboto(
+  fontSize: 20.sp,
+  color: kColorBlack,
+  fontWeight: FontWeight.w500,
+);
