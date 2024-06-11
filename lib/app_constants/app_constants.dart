@@ -53,3 +53,8 @@ TextStyle kStyleBlack20500 = GoogleFonts.roboto(
   color: kColorBlack,
   fontWeight: FontWeight.w500,
 );
+TextStyle kStyleBlack16400 = GoogleFonts.roboto(
+  fontSize: 16.sp,
+  color: kColorBlack,
+  fontWeight: FontWeight.w400,
+);

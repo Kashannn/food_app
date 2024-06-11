@@ -20,12 +20,12 @@ class _SignupScreenState extends State<SignupScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: _buildAppBar(),
+      appBar: buildAppBar(),
       body: _buildBody(),
     );
   }
 
-  AppBar _buildAppBar() {
+  AppBar buildAppBar() {
     return AppBar(
       title: const Text('Back'),
       leading: IconButton(
@@ -56,7 +56,9 @@ class _SignupScreenState extends State<SignupScreen> {
               SizedBox(height: 20.h),
               GradientButton(
                 text: 'Continue',
-                onPressed: () {},
+                onPressed: () {
+                  Get.toNamed('/VerificationOTP');
+                },
               ),
               SizedBox(height: 20.h),
               _buildOrDivider(),

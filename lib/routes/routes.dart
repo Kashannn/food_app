@@ -1,3 +1,4 @@
+import 'package:food_app/view/verification_otp.dart';
 import 'package:get/get.dart';
 
 import '../view/login_screen.dart';
@@ -8,15 +9,19 @@ class AppRoutes {
   static final routes = [
     GetPage(
       name: '/',
-      page: () => SplashScreen(),
+      page: () => const SplashScreen(),
     ),
     GetPage(
       name: '/login',
-      page: () => LoginScreen(),
+      page: () => const LoginScreen(),
     ),
     GetPage(
       name: '/signup',
-      page: () => SignupScreen(),
+      page: () => const SignupScreen(),
+    ),
+    GetPage(
+      name: '/VerificationOTP',
+      page: () =>  const VerificationOTP(),
     ),
   ];
 }
