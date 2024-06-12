@@ -6,6 +6,7 @@ import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 
 import '../app_constants/app_constants.dart';
+import '../utils/Custom _app_bar.dart';
 
 class VerificationOTP extends StatefulWidget {
   const VerificationOTP({super.key});
@@ -19,14 +20,9 @@ class _VerificationOTPState extends State<VerificationOTP> {
   Widget build(BuildContext context) {
     return Scaffold(
       resizeToAvoidBottomInset: true,
-      appBar: AppBar(
-        title: const Text('Back'),
-        leading: IconButton(
-          icon: const Icon(Icons.arrow_back_ios_new),
-          onPressed: () {
-            Navigator.pop(context);
-          },
-        ),
+      appBar: CustomAppBar(
+        title: 'Back',
+        context: context,
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -91,7 +87,9 @@ class _VerificationOTPState extends State<VerificationOTP> {
               padding: EdgeInsets.only(top: 221.h, left: 26.w, right: 27.w),
               child: GradientButton(
                 text: 'Verify',
-                onPressed: () {},
+                onPressed: () {
+                  Get.toNamed('/NameScreen');
+                },
               ),
             ),
           ],

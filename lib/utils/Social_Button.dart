@@ -15,10 +15,10 @@ Widget buildSocialButton({
       borderRadius: BorderRadius.circular(10.r),
       boxShadow: [
         BoxShadow(
-          color: Colors.black26, // Shadow color
-          offset: Offset(0, 4), // Shadow position
-          blurRadius: 8, // Shadow blur radius
-          spreadRadius: 1, // Shadow spread radius
+          color: Colors.black26,
+          offset: Offset(0, 4),
+          blurRadius: 8,
+          spreadRadius: 1,
         ),
       ],
     ),

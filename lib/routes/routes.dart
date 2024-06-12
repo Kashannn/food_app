@@ -2,6 +2,7 @@ import 'package:food_app/view/verification_otp.dart';
 import 'package:get/get.dart';
 
 import '../view/login_screen.dart';
+import '../view/name_screen.dart';
 import '../view/signup_screen.dart';
 import '../view/splash_screen.dart';
 
@@ -22,6 +23,10 @@ class AppRoutes {
     GetPage(
       name: '/VerificationOTP',
       page: () =>  const VerificationOTP(),
+    ),
+    GetPage(
+      name: '/NameScreen',
+      page: () =>  const NameScreen(),
     ),
   ];
 }
