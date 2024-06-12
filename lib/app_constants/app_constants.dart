@@ -37,6 +37,11 @@ TextStyle kStyleBlack14400 = GoogleFonts.poppins(
   color: kColorBlack,
   fontWeight: FontWeight.w400,
 );
+TextStyle kStyleBlack8500 = GoogleFonts.poppins(
+  fontSize: 8.sp,
+  color: kColorBlack,
+  fontWeight: FontWeight.w500,
+);
 TextStyle kStyleBlack23500 = GoogleFonts.poppins(
   fontSize: 23.sp,
   color: kColorBlack,

@@ -1,41 +1,92 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class CustomSwitch extends StatelessWidget {
-  final bool value;
-  final ValueChanged<bool> onChanged;
+class ToggleButton extends StatefulWidget {
+  const ToggleButton({super.key});
 
-  const CustomSwitch({required this.value, required this.onChanged, Key? key}) : super(key: key);
+  @override
+  _ToggleButtonState createState() => _ToggleButtonState();
+}
+
+class _ToggleButtonState extends State<ToggleButton> {
+  bool isDelivery = true;
 
   @override
   Widget build(BuildContext context) {
-    return Stack(
-      alignment: Alignment.center,
-      children: [
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+    return GestureDetector(
+      onTap: () {
+        setState(() {
+          isDelivery = !isDelivery;
+        });
+      },
+      child: Container(
+        width: 69.w,
+        height: 32.h,
+        decoration: BoxDecoration(
+          border: Border.all(
+            color:Colors.green,
+            width: 3.0,
+          ),
+          color: Colors.white,
+          borderRadius: BorderRadius.circular(30.r),
+        ),
+        child: Stack(
           children: [
-            SvgPicture.asset(
-              'assets/bike.svg',
-              width: 24.0,
-              height: 24.0,
+            AnimatedPositioned(
+              duration: const Duration(milliseconds: 250),
+              curve: Curves.easeIn,
+              left: isDelivery ? 0 : 34.5.w,
+              right: isDelivery ? 34.5.w : 0,
+              child: Container(
+                width: 34.5.w,
+                height: 32.h,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(30.r),
+                ),
+              ),
             ),
-            SvgPicture.asset(
-              'assets/person.svg',
-              width: 24.0,
-              height: 24.0,
+            Positioned.fill(
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Expanded(
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: isDelivery ? Colors.green : Colors.white,
+                        borderRadius: BorderRadius.circular(30.r),
+                      ),
+                      child: Center(
+                        child: SvgPicture.asset(
+                          'assets/bike.svg',
+                          color:
+                          isDelivery ? Colors.white : Colors.green,
+                        ),
+                      ),
+                    ),
+                  ),
+                  Expanded(
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: isDelivery ? Colors.white : Colors.green,
+                        borderRadius: BorderRadius.circular(30.r),
+                      ),
+                      child: Center(
+                        child: SvgPicture.asset(
+                          'assets/person.svg',
+                          color:
+                          isDelivery ? Colors.green : Colors.white,
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
             ),
           ],
         ),
-        Switch(
-          value: value,
-          onChanged: onChanged,
-          activeColor: Colors.transparent,
-          inactiveThumbColor: Colors.transparent,
-          inactiveTrackColor: Colors.transparent,
-          activeTrackColor: Colors.transparent,
-        ),
-      ],
+      ),
     );
   }
 }
