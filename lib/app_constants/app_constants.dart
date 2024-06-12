@@ -10,7 +10,6 @@ const Color kColorPrimary = Color.fromRGBO(72, 144, 246, 1);
 const Color kColorPrimary2 = Color(0xFFF5F5F5);
 const Color kColorGrey = Color.fromRGBO(124, 139, 160, 1);
 const Color kColorGrey2 = Color(0xFFD0D0D0);
-
 const Color kColorGrey124 = Color.fromRGBO(124, 139, 160, 1);
 
 
@@ -23,7 +22,16 @@ TextStyle kStyleBlack24700 = GoogleFonts.poppins(
   color: kColorBlack,
   fontWeight: FontWeight.w700,
 );
-
+TextStyle kStyleWhite12500 = GoogleFonts.poppins(
+  fontSize: 12.sp,
+  color: kColorWhite,
+  fontWeight: FontWeight.w500,
+);
+TextStyle kStyleBlack14300 = GoogleFonts.poppins(
+  fontSize: 13.sp,
+  color: kColorBlack,
+  fontWeight: FontWeight.w300,
+);
 TextStyle kStyleBlack14400 = GoogleFonts.poppins(
   fontSize: 14.sp,
   color: kColorBlack,

@@ -8,6 +8,7 @@ import '../view/authentication_screens/name_screen.dart';
 import '../view/authentication_screens/signup_screen.dart';
 import '../view/authentication_screens/splash_screen.dart';
 import '../view/authentication_screens/welcome_screen.dart';
+import '../view/dashboard_screens/dashboard.dart';
 
 class AppRoutes {
   static final routes = [
@@ -43,5 +44,8 @@ class AppRoutes {
       name: '/UseLocationScreen',
       page: () =>  const UseLocationScreen(),
     ),
+    GetPage(
+      name: '/Dashboard',
+      page: () => const Dashboard()),
   ];
 }
