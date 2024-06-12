@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:food_app/routes/routes.dart';
-import 'package:food_app/view/splash_screen.dart';
+import 'package:food_app/view/authentication_screens/splash_screen.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 
 

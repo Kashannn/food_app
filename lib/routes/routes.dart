@@ -1,10 +1,13 @@
-import 'package:food_app/view/verification_otp.dart';
+import 'package:food_app/view/authentication_screens/location_screen.dart';
+import 'package:food_app/view/authentication_screens/uselocation_screen.dart';
+import 'package:food_app/view/authentication_screens/verification_otp.dart';
 import 'package:get/get.dart';
 
-import '../view/login_screen.dart';
-import '../view/name_screen.dart';
-import '../view/signup_screen.dart';
-import '../view/splash_screen.dart';
+import '../view/authentication_screens/login_screen.dart';
+import '../view/authentication_screens/name_screen.dart';
+import '../view/authentication_screens/signup_screen.dart';
+import '../view/authentication_screens/splash_screen.dart';
+import '../view/authentication_screens/welcome_screen.dart';
 
 class AppRoutes {
   static final routes = [
@@ -27,6 +30,18 @@ class AppRoutes {
     GetPage(
       name: '/NameScreen',
       page: () =>  const NameScreen(),
+    ),
+    GetPage(
+      name: '/LocationScreen',
+      page: () =>  const LocationScreen(),
+    ),
+    GetPage(
+      name: '/WelcomeScreen',
+      page: () =>  const WelcomeScreen(),
+    ),
+    GetPage(
+      name: '/UseLocationScreen',
+      page: () =>  const UseLocationScreen(),
     ),
   ];
 }

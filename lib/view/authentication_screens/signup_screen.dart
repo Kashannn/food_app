@@ -6,9 +6,9 @@ import 'package:food_app/utils/custom_button.dart';
 import 'package:get/get.dart';
 import 'package:intl_phone_field/intl_phone_field.dart';
 
-import '../app_constants/app_constants.dart';
-import '../utils/Social_Button.dart';
-import '../utils/build_phone_number_field.dart';
+import '../../app_constants/app_constants.dart';
+import '../../utils/Social_Button.dart';
+import '../../utils/build_phone_number_field.dart';
 
 class SignupScreen extends StatefulWidget {
   const SignupScreen({super.key});

@@ -5,8 +5,8 @@ import 'package:food_app/utils/custom_button.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 
-import '../app_constants/app_constants.dart';
-import '../utils/Custom _app_bar.dart';
+import '../../app_constants/app_constants.dart';
+import '../../utils/Custom _app_bar.dart';
 
 class VerificationOTP extends StatefulWidget {
   const VerificationOTP({super.key});
