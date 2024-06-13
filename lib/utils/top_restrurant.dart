@@ -12,7 +12,7 @@ class TopRestaurantSection extends StatelessWidget {
     return Padding(
       padding: EdgeInsets.symmetric(horizontal: 14.w),
       child: Container(
-        height: 822.h,
+        height: 1100.h,
         width: 401.w,
         decoration: BoxDecoration(
           color: kColorGrey.withOpacity(0.1),
@@ -129,11 +129,66 @@ class TopRestaurantSection extends StatelessWidget {
                 ),
               ],
             ),
-            18.verticalSpace,
-
+            10.verticalSpace,
+            GridView(
+              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: 3,
+                childAspectRatio: 1.1,
+                crossAxisSpacing: 10.0,
+                mainAxisSpacing: 10.0,
+              ),
+              shrinkWrap: true,
+              physics: NeverScrollableScrollPhysics(),
+              children: [
+                buildGridItem('assets/fruits.png', 'Fresh Fruits & Vegetables'),
+                buildGridItem('assets/cookingoil.png', 'Cooking Oil & Ghee'),
+                buildGridItem('assets/fish.png', 'Meat & Fish'),
+                buildGridItem('assets/bakery.png', 'Bakery & Snacks'),
+                buildGridItem('assets/egg.png', 'Dairy & Eggs'),
+                buildGridItem('assets/coke.png', 'Beverages'),
+                buildGridItem('assets/dairy.png', 'Meat & Fish'),
+                buildGridItem(
+                    'assets/vegetable.png', 'Fresh Fruits & Vegetables'),
+                buildGridItem('assets/cookingoil.png', 'Cooking Oil & Ghee'),
+              ],
+            )
           ],
         ),
       ),
+    );
+  }
+
+  Widget buildGridItem(String imagePath, String title) {
+    return Column(
+      children: [
+        Container(
+          decoration: BoxDecoration(
+            color: kColorLightPrimary3.withOpacity(0.2),
+            borderRadius: BorderRadius.circular(8.r),
+            border: Border.all(
+              color: kColorLightPrimary3,
+              width: 2.0,
+            ),
+          ),
+          child: SizedBox(
+            width: 85.0,
+            height: 85.0,
+            child: Image.asset(
+              imagePath,
+              fit: BoxFit.cover,
+            ),
+          ),
+        ),
+        Expanded(
+          child: Text(
+            title,
+            style: kStyleBlack12400,
+            textAlign: TextAlign.center,
+            overflow: TextOverflow.ellipsis,
+            maxLines: 2,
+          ),
+        ),
+      ],
     );
   }
 }
