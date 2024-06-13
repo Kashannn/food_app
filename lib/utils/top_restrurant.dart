@@ -33,7 +33,9 @@ class TopRestaurantSection extends StatelessWidget {
                       borderRadius: BorderRadius.circular(30.r),
                     ),
                     minimumSize: Size(65.0, 26.0),
-                    padding: EdgeInsets.symmetric(horizontal: 20.0), // Adjust horizontal padding as needed
+                    padding: EdgeInsets.symmetric(
+                        horizontal:
+                            20.0), // Adjust horizontal padding as needed
                   ),
                   onPressed: () {},
                   child: Text('See all', style: kStyleBlack12400),
@@ -75,14 +77,60 @@ class TopRestaurantSection extends StatelessWidget {
                       borderRadius: BorderRadius.circular(30.r),
                     ),
                     minimumSize: Size(65.0, 26.0),
-                    padding: EdgeInsets.symmetric(horizontal: 20.0), // Adjust horizontal padding as needed
+                    padding: EdgeInsets.symmetric(
+                        horizontal:
+                            20.0), // Adjust horizontal padding as needed
                   ),
                   onPressed: () {},
                   child: Text('See all', style: kStyleBlack12400),
                 ),
               ],
             ),
-            AllPromotionCard(),
+            SizedBox(
+              height: 220.h,
+              child: ListView.builder(
+                scrollDirection: Axis.horizontal,
+                itemCount: 5,
+                itemBuilder: (context, index) {
+                  return Padding(
+                    padding: EdgeInsets.only(right: 10.w),
+                    child: AllPromotionCard(),
+                  );
+                },
+              ),
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Row(
+                  children: [
+                    SvgPicture.asset('assets/promotionIcon.svg',
+                        height: 25.h, width: 25.w),
+                    SizedBox(width: 7.w),
+                    Text(
+                      'Super',
+                      style: kStyleBlack18600,
+                    ),
+                  ],
+                ),
+                ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: kColorLightPrimary,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(30.r),
+                    ),
+                    minimumSize: Size(65.0, 26.0),
+                    padding: EdgeInsets.symmetric(
+                        horizontal:
+                            20.0), // Adjust horizontal padding as needed
+                  ),
+                  onPressed: () {},
+                  child: Text('See all', style: kStyleBlack12400),
+                ),
+              ],
+            ),
+            18.verticalSpace,
+
           ],
         ),
       ),

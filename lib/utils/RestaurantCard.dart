@@ -12,7 +12,6 @@ class RestaurantCard extends StatelessWidget {
           height: 122.h,
           width: 271.w,
           decoration: BoxDecoration(
-            color: kColorGrey.withOpacity(0.1),
             borderRadius: BorderRadius.only(
               topLeft: Radius.circular(8.r),
               topRight: Radius.circular(8.r),
@@ -63,7 +62,6 @@ class RestaurantCard extends StatelessWidget {
           height: 87.h,
           width: 271.w,
           decoration: BoxDecoration(
-            color: kColorGrey.withOpacity(0.1),
             borderRadius: BorderRadius.only(
               bottomLeft: Radius.circular(8.r),
               bottomRight: Radius.circular(8.r),

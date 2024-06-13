@@ -13,6 +13,7 @@ const Color kColorGrey2 = Color(0xFFD0D0D0);
 const Color kColorGrey124 = Color.fromRGBO(124, 139, 160, 1);
 const Color kColorLightPrimary = Color(0xFFA1EEC7);
 const Color kColorLightPrimary2 = Color(0xFF2CC879);
+const Color kColorLightPrimary3 = Color(0xFFA1EEC7);
 
 
 
