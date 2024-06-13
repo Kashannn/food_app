@@ -14,9 +14,6 @@ class TopRestaurantSection extends StatelessWidget {
       child: Container(
         height: 1100.h,
         width: 401.w,
-        decoration: BoxDecoration(
-          color: kColorGrey.withOpacity(0.1),
-        ),
         child: Column(
           children: [
             Row(
@@ -133,7 +130,7 @@ class TopRestaurantSection extends StatelessWidget {
             GridView(
               gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 3,
-                childAspectRatio: 1.1,
+                childAspectRatio: 1.0,
                 crossAxisSpacing: 10.0,
                 mainAxisSpacing: 10.0,
               ),
@@ -171,8 +168,8 @@ class TopRestaurantSection extends StatelessWidget {
             ),
           ),
           child: SizedBox(
-            width: 85.0,
-            height: 85.0,
+            width: 85.0.w,
+            height: 85.0.h,
             child: Image.asset(
               imagePath,
               fit: BoxFit.cover,

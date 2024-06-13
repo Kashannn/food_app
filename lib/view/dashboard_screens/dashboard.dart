@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../utils/categories.dart';
+import '../../utils/custom_bottom_navigation_bar.dart';
 import '../../utils/custom_searchbar.dart';
 import '../../utils/menu_adress_bar.dart';
 import '../../utils/promotion_card.dart';
@@ -18,7 +19,6 @@ class Dashboard extends StatelessWidget {
         body: SingleChildScrollView(
           child: Column(
             children: <Widget>[
-              // Top bar with Text
               TopBar(),
               11.verticalSpace,
               MenuAddressToggleRow(),
@@ -28,12 +28,12 @@ class Dashboard extends StatelessWidget {
               PromotionCard(),
               21.verticalSpace,
               Categories(),
-              24.verticalSpace,
+              20.verticalSpace,
               TopRestaurantSection(),
-              40.verticalSpace,
             ],
           ),
         ),
+        bottomNavigationBar: CustomBottomNavigationBar(),
       ),
     );
   }
