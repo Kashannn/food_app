@@ -1,9 +1,9 @@
 import 'package:get/get.dart';
 
-class DashboardController extends GetxController {
-  var switchValue = true.obs;
+class ToggleController extends GetxController {
+  var isDelivery = true.obs;
 
-  void toggleSwitch(bool value) {
-    switchValue.value = value;
+  void toggle() {
+    isDelivery.value = !isDelivery.value;
   }
 }
