@@ -12,6 +12,7 @@ const Color kColorGrey = Color.fromRGBO(124, 139, 160, 1);
 const Color kColorGrey2 = Color(0xFFD0D0D0);
 const Color kColorGrey124 = Color.fromRGBO(124, 139, 160, 1);
 const Color kColorLightPrimary = Color(0xFFA1EEC7);
+const Color kColorLightPrimary2 = Color(0xFF2CC879);
 
 
 
@@ -97,5 +98,10 @@ TextStyle kStyleBlackRubik18500 = GoogleFonts.rubik(
 TextStyle kStyleBlack12400 = GoogleFonts.rubik(
   fontSize: 12.sp,
   color: kColorBlack,
+  fontWeight: FontWeight.w400,
+);
+TextStyle kStyleWhite10400 = GoogleFonts.rubik(
+  fontSize: 10.sp,
+  color: kColorWhite,
   fontWeight: FontWeight.w400,
 );

@@ -103,10 +103,40 @@ class Dashboard extends StatelessWidget {
                   width: 398.w,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20.r),
-                    color: kColorGrey.withOpacity(0.1),
+                    color: kColorLightPrimary2,
+                  ),
+                  child: Stack(
+                    children: [
+                      Positioned.fill(
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.circular(20.r),
+                          child: Opacity(
+                            opacity: 0.3, // Adjust the opacity as needed
+                            child: Image.asset(
+                              'assets/background.png',
+                              fit: BoxFit.cover,
+                            ),
+                          ),
+                        ),
+                      ),
+                      Positioned(
+                        top: 10.h,
+                        right: 0.w,
+                        child: Align(
+                          alignment: Alignment.topRight,
+                          child: Image.asset(
+                            'assets/handfood.png',
+                            width: 153.w,
+                            height: 200.h,
+                          ),
+                        ),
+                      ),
+                    ],
                   ),
                 ),
               ),
+
+
               21.verticalSpace,
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: 21.w),
@@ -240,6 +270,51 @@ class Dashboard extends StatelessWidget {
                                     topLeft: Radius.circular(8.r),
                                     topRight: Radius.circular(8.r),
                                   ),
+                                ),
+                                child: Stack(
+                                  children: [
+                                    Container(
+                                      height: 122.h,
+                                      width: 271.w,
+                                      decoration: BoxDecoration(
+                                        image: DecorationImage(
+                                          image: AssetImage(
+                                              'assets/fooddashboard.jpeg'),
+                                          fit: BoxFit.cover,
+                                        ),
+                                        borderRadius: BorderRadius.only(
+                                          topLeft: Radius.circular(8.r),
+                                          topRight: Radius.circular(8.r),
+                                        ),
+                                      ),
+                                    ),
+                                    Positioned(
+                                      top: 70.h,
+                                      right: 0,
+                                      child: Container(
+                                        height: 26.h,
+                                        width: 115.w,
+                                        decoration: BoxDecoration(
+                                          color: kColorLightPrimary2,
+                                          borderRadius: BorderRadius.only(
+                                            topLeft: Radius.circular(8.r),
+                                            bottomLeft: Radius.circular(8.r),
+                                          ),
+                                        ),
+                                        child: Row(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.spaceEvenly,
+                                          children: [
+                                            Text('€3.00 off delivery',
+                                                style: kStyleWhite10400),
+                                            SvgPicture.asset(
+                                              'assets/officon.svg',
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                    )
+                                  ],
                                 ),
                               ),
                               Container(
