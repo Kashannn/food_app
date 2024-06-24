@@ -28,7 +28,7 @@ class Dashboard extends StatelessWidget {
               PromotionCard(),
               21.verticalSpace,
               Categories(),
-              20.verticalSpace,
+              15.verticalSpace,
               TopRestaurantSection(),
             ],
           ),

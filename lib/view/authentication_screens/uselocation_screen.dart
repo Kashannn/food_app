@@ -22,7 +22,7 @@ class _UseLocationScreenState extends State<UseLocationScreen> {
         padding: EdgeInsets.symmetric(horizontal: 27.w, vertical: 98.h),
         child: Container(
           width: 340.w,
-          height: 460.h,
+          height: 480.h,
           decoration: BoxDecoration(
             color: kColorWhite,
             borderRadius: BorderRadius.circular(20.r),

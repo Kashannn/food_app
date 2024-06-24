@@ -1,36 +1,36 @@
 import 'package:flutter/material.dart';
 import 'package:floating_bottom_navigation_bar/floating_bottom_navigation_bar.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:get/get.dart';
 
-class CustomBottomNavigationBar extends StatefulWidget {
-  @override
-  _CustomBottomNavigationBarState createState() => _CustomBottomNavigationBarState();
-}
+import '../controllers/dashboard_controller.dart';
 
-class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> {
-  int _index = 0;
+class CustomBottomNavigationBar extends StatelessWidget {
+  final BottomNavController bottomNavController = Get.put(BottomNavController());
 
   @override
   Widget build(BuildContext context) {
     return ClipRRect(
       borderRadius: BorderRadius.only(
-        topLeft: Radius.circular(30),
-        topRight: Radius.circular(30),
-        bottomLeft: Radius.circular(30),
-        bottomRight: Radius.circular(30),
+        topLeft: Radius.circular(30.r),
+        topRight: Radius.circular(30.r),
       ),
-      child: Container(
-        height: 110.h, // Adjust the height to fit the FloatingNavbar properly
-        child: FloatingNavbar(
-          onTap: (int val) => setState(() => _index = val),
-          currentIndex: _index,
-          items: [
-            FloatingNavbarItem(icon: Icons.home, title: 'Home'),
-            FloatingNavbarItem(icon: Icons.explore, title: 'Explore'),
-            FloatingNavbarItem(icon: Icons.chat_bubble_outline, title: 'Chats'),
-            FloatingNavbarItem(icon: Icons.settings, title: 'Settings'),
-          ],
-        ),
+      child: SizedBox(
+        height: 125.h,
+        child: Obx(() {
+          return FloatingNavbar(
+            onTap: (int val) {
+              bottomNavController.changeIndex(val);
+            },
+            currentIndex: bottomNavController.currentIndex.value,
+            items: [
+              FloatingNavbarItem(icon: Icons.home, title: 'Home'),
+              FloatingNavbarItem(icon: Icons.favorite, title: 'Favorites'),
+              FloatingNavbarItem(icon: Icons.chat_bubble_outline, title: 'Chats'),
+              FloatingNavbarItem(icon: Icons.person, title: 'Profile'),
+            ],
+          );
+        }),
       ),
     );
   }

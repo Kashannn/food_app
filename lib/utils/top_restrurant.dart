@@ -30,9 +30,7 @@ class TopRestaurantSection extends StatelessWidget {
                       borderRadius: BorderRadius.circular(30.r),
                     ),
                     minimumSize: Size(65.0, 26.0),
-                    padding: EdgeInsets.symmetric(
-                        horizontal:
-                            20.0), // Adjust horizontal padding as needed
+                    padding: EdgeInsets.symmetric(horizontal: 20.0),
                   ),
                   onPressed: () {},
                   child: Text('See all', style: kStyleBlack12400),
