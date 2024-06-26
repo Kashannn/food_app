@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:food_app/app_constants/images_constants.dart';
 
 import '../app_constants/app_constants.dart';
 class Categories extends StatelessWidget {
@@ -12,23 +13,23 @@ class Categories extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           _CategoryItem(
-            assetName: 'assets/manubar.svg',
+            assetName:AppImages.manuBar,
             label: '',
           ),
           _CategoryItem(
-            assetName: 'assets/american.svg',
+            assetName: AppImages.american,
             label: 'American',
           ),
           _CategoryItem(
-            assetName: 'assets/burgers.svg',
+            assetName: AppImages.burgers,
             label: 'Burgers',
           ),
           _CategoryItem(
-            assetName: 'assets/breakfast.svg',
+            assetName: AppImages.breakfast,
             label: 'Breakfast',
           ),
           _CategoryItem(
-            assetName: 'assets/american.svg',
+            assetName: AppImages.american,
             label: 'American',
           ),
         ],

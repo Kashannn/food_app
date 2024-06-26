@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:food_app/app_constants/app_constants.dart';
+import 'package:food_app/app_constants/images_constants.dart';
 import 'package:food_app/utils/custom_button.dart';
 import 'package:get/get.dart';
 
@@ -27,7 +28,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
             SizedBox(height: 101.h),
             Center(
               child: SvgPicture.asset(
-                'assets/Frame.svg',
+              AppImages.frame,
                 width: 159.w,
                 height: 159.h,
               ),

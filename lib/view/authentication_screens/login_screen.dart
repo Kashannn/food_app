@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:food_app/app_constants/images_constants.dart';
 import 'package:get/route_manager.dart';
 
 import '../../app_constants/app_constants.dart';
@@ -49,7 +50,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         height: 475.h,
                         child: ClipRRect(
                           child: Image.asset(
-                            'assets/login.png',
+                            AppImages.login,
                             fit: BoxFit.cover,
                           ),
                         ),

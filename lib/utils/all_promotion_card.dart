@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:food_app/app_constants/images_constants.dart';
 
 import '../app_constants/app_constants.dart';
 
@@ -27,7 +28,7 @@ class AllPromotionCard extends StatelessWidget {
                 width: 271.w,
                 decoration: BoxDecoration(
                   image: DecorationImage(
-                    image: AssetImage('assets/allpromotion.png'),
+                    image: AssetImage(AppImages.allPromotion),
                     fit: BoxFit.cover,
                   ),
                   borderRadius: BorderRadius.only(

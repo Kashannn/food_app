@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:food_app/app_constants/images_constants.dart';
 
 import '../app_constants/app_constants.dart';
 class RestaurantCard extends StatelessWidget {
@@ -24,7 +25,7 @@ class RestaurantCard extends StatelessWidget {
                 width: 271.w,
                 decoration: BoxDecoration(
                   image: DecorationImage(
-                    image: AssetImage('assets/fooddashboard.jpeg'),
+                    image: AssetImage(AppImages.foodDashboard),
                     fit: BoxFit.cover,
                   ),
                   borderRadius: BorderRadius.only(
@@ -50,7 +51,7 @@ class RestaurantCard extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       Text('€3.00 off delivery', style: kStyleWhite10400),
-                      SvgPicture.asset('assets/officon.svg'),
+                      SvgPicture.asset(AppImages.offIcon),
                     ],
                   ),
                 ),
@@ -76,11 +77,11 @@ class RestaurantCard extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
-                  SvgPicture.asset('assets/truck.svg'),
+                  SvgPicture.asset(AppImages.truck),
                   Text('€3,00', style: kStyleBlack12400),
-                  SvgPicture.asset('assets/clock.svg'),
+                  SvgPicture.asset(AppImages.clock),
                   Text('40-50min', style: kStyleBlack12400),
-                  SvgPicture.asset('assets/star.svg'),
+                  SvgPicture.asset(AppImages.star),
                   Text('9,5', style: kStyleBlack12400),
                 ],
               ),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:food_app/app_constants/images_constants.dart';
 import 'package:get/get.dart';
 
 import '../controllers/dashboard_controller.dart'; // Import the controller
@@ -54,7 +55,7 @@ class ToggleButton extends StatelessWidget {
                         ),
                         child: Center(
                           child: SvgPicture.asset(
-                            'assets/bike.svg',
+                            AppImages.bike,
                             color: controller.isDelivery.value ? Colors.white : Colors.green,
                           ),
                         ),
@@ -68,7 +69,7 @@ class ToggleButton extends StatelessWidget {
                         ),
                         child: Center(
                           child: SvgPicture.asset(
-                            'assets/person.svg',
+                            AppImages.person,
                             color: controller.isDelivery.value ? Colors.green : Colors.white,
                           ),
                         ),

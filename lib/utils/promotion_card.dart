@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:food_app/app_constants/images_constants.dart';
 
 import '../app_constants/app_constants.dart';
 
@@ -23,7 +24,7 @@ class PromotionCard extends StatelessWidget {
                 child: Opacity(
                   opacity: 0.3,
                   child: Image.asset(
-                    'assets/background.png',
+                    AppImages.background,
                     fit: BoxFit.cover,
                   ),
                 ),
@@ -35,7 +36,7 @@ class PromotionCard extends StatelessWidget {
               child: Align(
                 alignment: Alignment.topRight,
                 child: Image.asset(
-                  'assets/handfood.png',
+                  AppImages.handFood,
                   width: 153.w,
                   height: 200.h,
                 ),

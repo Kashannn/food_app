@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:food_app/app_constants/images_constants.dart';
 
 import '../app_constants/app_constants.dart';
 import 'RestaurantCard.dart';
@@ -56,7 +57,7 @@ class TopRestaurantSection extends StatelessWidget {
               children: [
                 Row(
                   children: [
-                    SvgPicture.asset('assets/promotionIcon.svg',
+                    SvgPicture.asset(AppImages.promotionIcon,
                         height: 25.h, width: 25.w),
                     SizedBox(width: 7.w),
                     Text(
@@ -99,7 +100,7 @@ class TopRestaurantSection extends StatelessWidget {
               children: [
                 Row(
                   children: [
-                    SvgPicture.asset('assets/promotionIcon.svg',
+                    SvgPicture.asset(AppImages.promotionIcon,
                         height: 25.h, width: 25.w),
                     SizedBox(width: 7.w),
                     Text(
@@ -135,16 +136,15 @@ class TopRestaurantSection extends StatelessWidget {
               shrinkWrap: true,
               physics: NeverScrollableScrollPhysics(),
               children: [
-                buildGridItem('assets/fruits.png', 'Fresh Fruits & Vegetables'),
-                buildGridItem('assets/cookingoil.png', 'Cooking Oil & Ghee'),
-                buildGridItem('assets/fish.png', 'Meat & Fish'),
-                buildGridItem('assets/bakery.png', 'Bakery & Snacks'),
-                buildGridItem('assets/egg.png', 'Dairy & Eggs'),
-                buildGridItem('assets/coke.png', 'Beverages'),
-                buildGridItem('assets/dairy.png', 'Meat & Fish'),
-                buildGridItem(
-                    'assets/vegetable.png', 'Fresh Fruits & Vegetables'),
-                buildGridItem('assets/cookingoil.png', 'Cooking Oil & Ghee'),
+                buildGridItem(AppImages.fruits, 'Fresh Fruits & Vegetables'),
+                buildGridItem(AppImages.cookingOil, 'Cooking Oil & Ghee'),
+                buildGridItem(AppImages.fish, 'Meat & Fish'),
+                buildGridItem(AppImages.bakery, 'Bakery & Snacks'),
+                buildGridItem(AppImages.egg, 'Dairy & Eggs'),
+                buildGridItem(AppImages.coke, 'Beverages'),
+                buildGridItem(AppImages.dairy, 'Meat & Fish'),
+                buildGridItem(AppImages.vegetable, 'Fresh Fruits & Vegetables'),
+                buildGridItem(AppImages.vegetable, 'Cooking Oil & Ghee'),
               ],
             )
           ],

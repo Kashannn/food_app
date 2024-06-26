@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:food_app/app_constants/images_constants.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 
@@ -24,7 +25,7 @@ class _SplashScreenState extends State<SplashScreen> {
             Padding(
               padding: EdgeInsets.only(top: 95.h, left: 42.w),
               child: Image.asset(
-                'assets/splash.png',
+                AppImages.splash,
                 fit: BoxFit.contain,
                 width: 309.w,
                 height: 285.h,

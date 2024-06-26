@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:food_app/app_constants/app_constants.dart';
+import 'package:food_app/app_constants/images_constants.dart';
 import 'package:food_app/utils/Custom%20_app_bar.dart';
 import 'package:food_app/utils/custom_button.dart';
 import 'package:get/get.dart';
@@ -25,7 +26,7 @@ class _LocationScreenState extends State<LocationScreen> {
             Padding(
               padding: EdgeInsets.symmetric(horizontal: 31.w),
               child: Image.asset(
-                'assets/location.png',
+                AppImages.location,
                 width: 330.w,
                 height: 312.h,
               ),

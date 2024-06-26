@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:food_app/app_constants/images_constants.dart';
 import 'package:get/get.dart';
 import '../../app_constants/app_constants.dart';
 import '../../utils/Custom _app_bar.dart';
@@ -41,7 +42,7 @@ class _UseLocationScreenState extends State<UseLocationScreen> {
               Padding(
                 padding: EdgeInsets.only(top: 30.h),
                 child: SvgPicture.asset(
-                  'assets/LocationIcon.svg',
+                  AppImages.locationIcon,
                   width: 150.w,
                   height: 150.h,
                 ),
