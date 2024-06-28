@@ -4,7 +4,7 @@ class AppImages extends AssetImage {
   const AppImages(super.assetName);
   static const String _assetsPath = 'assets/Images';
   static const String _iconPath = 'assets/IconsSvg';
-
+//PNG images
   static const String splash = '$_assetsPath/splash.png';
   static const String login = '$_assetsPath/login.png';
   static const String location = '$_assetsPath/location.png';
@@ -20,6 +20,15 @@ class AppImages extends AssetImage {
   static const String vegetable= '$_assetsPath/vegetable.png';
   static const String foodDashboard= '$_assetsPath/fooddashboard.jpeg';
   static const String allPromotion= '$_assetsPath/allpromotion.png';
+  static const String mcdonald= '$_assetsPath/mcdonalds.png';
+  static const String kfc= '$_assetsPath/kfc.png';
+  static const String pizzaHut= '$_assetsPath/pizzahut.png';
+  static const String subway= '$_assetsPath/subway.png';
+  static const String mcdonaldBackground= '$_assetsPath/Mcdonaldsbackground.png';
+  static const String pizzaHutBackground= '$_assetsPath/pizzahutbackground.png';
+  static const String kfcBackground= '$_assetsPath/kfcbackground.png';
+  static const String subwayBackground= '$_assetsPath/subwaybackground.png';
+
 
 //Svg images
   static const String locationIcon= '$_iconPath/LocationIcon.svg';
@@ -36,6 +45,19 @@ class AppImages extends AssetImage {
   static const String clock= '$_iconPath/clock.svg';
   static const String star= '$_iconPath/star.svg';
   static const String offIcon= '$_iconPath/officon.svg';
+
+  static const String groceries= '$_iconPath/groceries.svg';
+  static const String superFodvo= '$_iconPath/superfodvo.svg';
+  static const String pharmacy= '$_iconPath/pharmacy.svg';
+  static const String premiumRestaurants= '$_iconPath/premium_restaurants.svg';
+  static const String food= '$_iconPath/food.svg';
+  static const String shopsGifts= '$_iconPath/shops_gifts.svg';
+  static const String drinks= '$_iconPath/drinks.svg';
+  static const String courier= '$_iconPath/courier.svg';
+
+
+
+
 
 
 

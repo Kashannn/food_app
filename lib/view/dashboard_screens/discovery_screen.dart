@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:food_app/app_constants/app_constants.dart';
+import 'package:food_app/app_constants/images_constants.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 
 class DiscoveryScreen extends StatefulWidget {
   const DiscoveryScreen({super.key});
@@ -19,7 +22,7 @@ class _DiscoveryScreenState extends State<DiscoveryScreen> {
           children: [
             Container(
               width: 1.sw,
-              color: Colors.green,
+              color: kColorLightPrimary2,
               padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 20.h),
               child: Column(
                 children: [
@@ -61,36 +64,64 @@ class _DiscoveryScreenState extends State<DiscoveryScreen> {
                     physics: NeverScrollableScrollPhysics(),
                     children: [
                       CategoryButton(
-                        iconPath: 'assets/groceries.svg',
+                        iconPath: AppImages.groceries,
                         label: 'Groceries',
+                        onTap: () {
+                          Get.toNamed('/PremimumGroceries');
+                          print('Groceries tapped');
+                        },
                       ),
                       CategoryButton(
-                        iconPath: 'assets/superfodvo.svg',
+                        iconPath: AppImages.superFodvo,
                         label: 'SuperFodvo',
+                        onTap: () {
+                          print('SuperFodvo tapped');
+                        },
                       ),
                       CategoryButton(
-                        iconPath: 'assets/pharmacy.svg',
+                        iconPath: AppImages.pharmacy,
                         label: 'Pharmacy & Beauty',
+                        onTap: () {
+                          print('Pharmacy & Beauty tapped');
+                        },
                       ),
                       CategoryButton(
-                        iconPath: 'assets/premium_restaurants.svg',
+                        iconPath: AppImages.premiumRestaurants,
                         label: 'Premium Restaurants',
+                        onTap: () {
+                          Get.toNamed('/PremimumRestaurants');
+                          print('Premium Restaurants tapped');
+                        },
                       ),
                       CategoryButton(
-                        iconPath: 'assets/food.svg',
+                        iconPath: AppImages.food,
                         label: 'Food',
+                        onTap: () {
+                          print('Food tapped');
+                        },
                       ),
                       CategoryButton(
-                        iconPath: 'assets/shops_gifts.svg',
+                        iconPath: AppImages.shopsGifts,
                         label: 'Shops & Gifts',
+                        onTap: () {
+                          print('Shops & Gifts tapped');
+                        },
                       ),
                       CategoryButton(
-                        iconPath: 'assets/drinks.svg',
+                        iconPath: AppImages.groceries,
                         label: 'Drinks',
+                        onTap: () {
+
+                          print('Drinks tapped');
+                        },
                       ),
                       CategoryButton(
-                        iconPath: 'assets/courier.svg',
+                        iconPath: AppImages.courier,
                         label: 'Courier',
+                        onTap: () {
+
+                          print('Courier tapped');
+                        },
                       ),
                     ],
                   ),
@@ -107,31 +138,39 @@ class _DiscoveryScreenState extends State<DiscoveryScreen> {
 class CategoryButton extends StatelessWidget {
   final String iconPath;
   final String label;
+  final VoidCallback onTap;
 
-  CategoryButton({required this.iconPath, required this.label});
+  CategoryButton({
+    required this.iconPath,
+    required this.label,
+    required this.onTap,
+  });
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        color: Colors.white,
-        borderRadius: BorderRadius.circular(12.r),
-      ),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          SvgPicture.asset(
-            iconPath,
-            width: 50.w,
-            height: 50.h,
-          ),
-          SizedBox(height: 8.h),
-          Text(
-            label,
-            textAlign: TextAlign.center,
-            style: kStyleBlack14500,
-          ),
-        ],
+    return GestureDetector(
+      onTap: onTap,
+      child: Container(
+        decoration: BoxDecoration(
+          color: Colors.white,
+          borderRadius: BorderRadius.circular(12.r),
+        ),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            SvgPicture.asset(
+              iconPath,
+              width: 50.w,
+              height: 50.h,
+            ),
+            SizedBox(height: 8.h),
+            Text(
+              label,
+              textAlign: TextAlign.center,
+              style: kStyleBlack14500,
+            ),
+          ],
+        ),
       ),
     );
   }

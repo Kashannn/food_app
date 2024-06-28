@@ -18,6 +18,7 @@ const Color kColorLightPrimary3 = Color(0xFFA1EEC7);
 
 
 
+
 ///////////////----------------Fonts----------------////////////////
 
 TextStyle kStyleBlack24700 = GoogleFonts.poppins(

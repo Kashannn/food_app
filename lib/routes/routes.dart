@@ -1,9 +1,9 @@
 import 'package:food_app/view/authentication_screens/location_screen.dart';
 import 'package:food_app/view/authentication_screens/uselocation_screen.dart';
 import 'package:food_app/view/authentication_screens/verification_otp.dart';
-import 'package:food_app/view/dashboard_screens/kfc.dart';
-import 'package:food_app/view/dashboard_screens/mcdonalds.dart';
-import 'package:food_app/view/dashboard_screens/pizzahut.dart';
+import 'package:food_app/view/discovery_screen/premimum_restaurants/kfc.dart';
+import 'package:food_app/view/discovery_screen/premimum_restaurants/mcdonalds.dart';
+import 'package:food_app/view/discovery_screen/premimum_restaurants/pizzahut.dart';
 import 'package:food_app/view/dashboard_screens/profile_screen.dart';
 import 'package:get/get.dart';
 
@@ -14,8 +14,9 @@ import '../view/authentication_screens/splash_screen.dart';
 import '../view/authentication_screens/welcome_screen.dart';
 import '../view/dashboard_screens/dashboard.dart';
 import '../view/dashboard_screens/discovery_screen.dart';
-import '../view/dashboard_screens/premimum_restaurants.dart';
-import '../view/dashboard_screens/subway.dart';
+import '../view/discovery_screen/Groceries_Screen/premimum_groceries.dart';
+import '../view/discovery_screen/premimum_restaurants/premimum_restaurants.dart';
+import '../view/discovery_screen/premimum_restaurants/subway.dart';
 
 class AppRoutes {
   static final routes = [
@@ -83,6 +84,11 @@ class AppRoutes {
       name: '/Subway',
       page: () => const Subway(),
     ),
+    GetPage(
+      name: '/PremimumGroceries',
+      page: () => const PremimumGroceries(),
+    ),
+
 
   ];
 }

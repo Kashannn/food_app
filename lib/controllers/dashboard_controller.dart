@@ -16,11 +16,8 @@ class BottomNavController extends GetxController {
     if (index == 3) {
       Get.toNamed('/Profile');
     }
-    else if (index == 1) {
-      Get.toNamed('/Discovery');
-    }
-    else if (index == 2) {
-      Get.toNamed('/PremimumRestaurants');
+    else if(index==0){
+      Get.toNamed('/Dashboard');
     }
   }
 }
