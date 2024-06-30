@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:food_app/app_constants/app_constants.dart';
 import 'package:food_app/app_constants/images_constants.dart';
 import 'package:get/get.dart';
@@ -54,26 +55,27 @@ class _PremimumGroceriesState extends State<PremimumGroceries > {
               Expanded(
                 child: GridView.count(
                   crossAxisCount: 2,
-                  crossAxisSpacing: 30,
+                  crossAxisSpacing: 10,
                   mainAxisSpacing: 20,
                   padding: EdgeInsets.symmetric(horizontal: 16.w),
                   children: [
                     RestaurantButton(
-                      imagePath:AppImages.mcdonald,
-                      name: "Alcampo",
+                      imagePath:AppImages.Alcampo,
+                      name: "Alcampo"
+                          "",
                       onTap: () {
-                        Get.toNamed('/McDonalds');
+                        Get.toNamed('/AlcampoDashboard');
                       },
                     ),
                     RestaurantButton(
-                      imagePath:AppImages.kfc,
+                      imagePath:AppImages.localMerchants,
                       name: 'Local Merchants',
                       onTap: () {
                         Get.toNamed('/Kfc');
                       },
                     ),
                     RestaurantButton(
-                      imagePath:AppImages.pizzaHut,
+                      imagePath:AppImages.superMart,
                       name: 'Supermart',
                       onTap: () {
                         Get.toNamed('/PizzaHut');
@@ -84,7 +86,7 @@ class _PremimumGroceriesState extends State<PremimumGroceries > {
                 ),
               ),
               Padding(
-                padding: EdgeInsets.symmetric(vertical: 30.h),
+                padding: EdgeInsets.symmetric(vertical: 40.h),
                 child: Text(
                   'Groceries',
                   style: kStyleBlack24700.copyWith(color: Colors.white),
@@ -118,8 +120,8 @@ class RestaurantButton extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset(imagePath, height: 80.h),
-            SizedBox(height: 8.h),
+            SvgPicture.asset(imagePath, height: 100.h),
+            SizedBox(height: 10.h),
             Text(
               name,
               style: TextStyle(
@@ -133,3 +135,4 @@ class RestaurantButton extends StatelessWidget {
     );
   }
 }
+

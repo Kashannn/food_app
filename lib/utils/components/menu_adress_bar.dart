@@ -4,7 +4,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:food_app/app_constants/images_constants.dart';
 import 'package:get/get.dart';
 
-import '../app_constants/app_constants.dart';
+import '../../app_constants/app_constants.dart';
 import 'custom_switch.dart';
 class MenuAddressToggleRow extends StatelessWidget {
   @override

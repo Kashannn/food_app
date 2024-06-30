@@ -3,7 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:food_app/app_constants/images_constants.dart';
 
 import '../../../app_constants/app_constants.dart';
-import '../../../utils/custom_bottom_navigation_bar.dart';
+import '../../../utils/components/custom_bottom_navigation_bar.dart';
 class Subway extends StatefulWidget {
   const Subway({super.key});
 

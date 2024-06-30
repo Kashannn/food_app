@@ -3,7 +3,7 @@ import 'package:floating_bottom_navigation_bar/floating_bottom_navigation_bar.da
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 
-import '../controllers/dashboard_controller.dart';
+import '../../controllers/dashboard_controller.dart';
 
 class CustomBottomNavigationBar extends StatelessWidget {
   final BottomNavController bottomNavController = Get.put(BottomNavController());

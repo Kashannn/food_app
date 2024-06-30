@@ -3,7 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:food_app/app_constants/images_constants.dart';
 
-import '../app_constants/app_constants.dart';
+import '../../app_constants/app_constants.dart';
 import 'RestaurantCard.dart';
 import 'all_promotion_card.dart';
 

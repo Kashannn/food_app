@@ -4,7 +4,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:food_app/app_constants/images_constants.dart';
 import 'package:get/get.dart';
 
-import '../controllers/dashboard_controller.dart'; // Import the controller
+import '../../controllers/dashboard_controller.dart'; // Import the controller
 
 class ToggleButton extends StatelessWidget {
   const ToggleButton({super.key});

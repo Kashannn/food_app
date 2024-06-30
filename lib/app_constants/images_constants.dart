@@ -28,6 +28,8 @@ class AppImages extends AssetImage {
   static const String pizzaHutBackground= '$_assetsPath/pizzahutbackground.png';
   static const String kfcBackground= '$_assetsPath/kfcbackground.png';
   static const String subwayBackground= '$_assetsPath/subwaybackground.png';
+  static const String alcampoDashboard= '$_assetsPath/alcampoDashboard.png';
+  static const String auchan= '$_assetsPath/auchan.png';
 
 
 //Svg images
@@ -54,10 +56,13 @@ class AppImages extends AssetImage {
   static const String shopsGifts= '$_iconPath/shops_gifts.svg';
   static const String drinks= '$_iconPath/drinks.svg';
   static const String courier= '$_iconPath/courier.svg';
-
-
-
-
+  static const String superMart= '$_iconPath/Supermart.svg';
+  static const String Alcampo= '$_iconPath/Alcampo.svg';
+  static const String person2= '$_iconPath/person2.svg';
+  static const String prime= '$_iconPath/Prime.svg';
+  static const String thumb= '$_iconPath/thumb.svg';
+  static const String clock2= '$_iconPath/clock2.svg';
+  static const String localMerchants= '$_iconPath/LocalMerchants.svg';
 
 
 

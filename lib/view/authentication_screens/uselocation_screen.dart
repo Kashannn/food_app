@@ -4,8 +4,8 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:food_app/app_constants/images_constants.dart';
 import 'package:get/get.dart';
 import '../../app_constants/app_constants.dart';
-import '../../utils/Custom _app_bar.dart';
-import '../../utils/custom_button.dart';
+import '../../utils/components/Custom _app_bar.dart';
+import '../../utils/components/custom_button.dart';
 
 class UseLocationScreen extends StatefulWidget {
   const UseLocationScreen({super.key});

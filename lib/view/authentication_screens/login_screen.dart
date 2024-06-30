@@ -4,8 +4,8 @@ import 'package:food_app/app_constants/images_constants.dart';
 import 'package:get/route_manager.dart';
 
 import '../../app_constants/app_constants.dart';
-import '../../utils/custom_button.dart';
-import '../../utils/custom_textfield.dart';
+import '../../utils/components/custom_button.dart';
+import '../../utils/components/custom_textfield.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({Key? key}) : super(key: key);

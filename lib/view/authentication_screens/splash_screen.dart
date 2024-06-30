@@ -5,7 +5,7 @@ import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 
 import '../../app_constants/app_constants.dart';
-import '../../utils/custom_button.dart';
+import '../../utils/components/custom_button.dart';
 // Import the GradientButton
 
 class SplashScreen extends StatefulWidget {

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:intl_phone_field/intl_phone_field.dart';
 
-import '../app_constants/app_constants.dart';
+import '../../app_constants/app_constants.dart';
 
 Widget buildPhoneNumberField() {
   return Container(

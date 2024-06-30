@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:food_app/utils/Custom%20_app_bar.dart';
-import 'package:food_app/utils/custom_button.dart';
+import 'package:food_app/utils/components/Custom%20_app_bar.dart';
+import 'package:food_app/utils/components/custom_button.dart';
 import 'package:get/get.dart';
 import 'package:intl_phone_field/intl_phone_field.dart';
 
 import '../../app_constants/app_constants.dart';
-import '../../utils/Social_Button.dart';
-import '../../utils/build_phone_number_field.dart';
+import '../../utils/components/Social_Button.dart';
+import '../../utils/components/build_phone_number_field.dart';
 
 class SignupScreen extends StatefulWidget {
   const SignupScreen({super.key});

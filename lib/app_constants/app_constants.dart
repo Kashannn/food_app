@@ -10,6 +10,8 @@ const Color kColorPrimary = Color.fromRGBO(72, 144, 246, 1);
 const Color kColorPrimary2 = Color(0xFFF5F5F5);
 const Color kColorGrey = Color.fromRGBO(124, 139, 160, 1);
 const Color kColorGrey2 = Color(0xFFD0D0D0);
+const Color kColorGrey3 = Color(0xFF828282);
+const Color kColorGrey4 = Color(0xFFF2F2F2);
 const Color kColorGrey124 = Color.fromRGBO(124, 139, 160, 1);
 const Color kColorLightPrimary = Color(0xFFA1EEC7);
 const Color kColorLightPrimary2 = Color(0xFF2CC879);
@@ -20,7 +22,7 @@ const Color kColorLightPrimary3 = Color(0xFFA1EEC7);
 
 
 ///////////////----------------Fonts----------------////////////////
-
+//poppins
 TextStyle kStyleBlack24700 = GoogleFonts.poppins(
   fontSize: 24.sp,
   color: kColorBlack,
@@ -76,11 +78,17 @@ TextStyle kStyleBlack20700 = GoogleFonts.poppins(
   color: kColorBlack,
   fontWeight: FontWeight.w700,
 );
+TextStyle kStyleGrey312700 = GoogleFonts.poppins(
+  fontSize: 12.sp,
+  color: kColorGrey3,
+  fontWeight: FontWeight.w700,
+);
 TextStyle kStyleBlack16500 = GoogleFonts.poppins(
   fontSize: 16.sp,
   color: kColorGrey2,
   fontWeight: FontWeight.w500,
 );
+//Roboto
 TextStyle kStyleBlack20500 = GoogleFonts.roboto(
   fontSize: 20.sp,
   color: kColorBlack,
@@ -91,6 +99,7 @@ TextStyle kStyleBlack16400 = GoogleFonts.roboto(
   color: kColorBlack,
   fontWeight: FontWeight.w400,
 );
+//Rubik
 TextStyle kStyleBlack18600 = GoogleFonts.rubik(
   fontSize: 18.sp,
   color: kColorBlack,
@@ -111,4 +120,9 @@ TextStyle kStyleWhite10400 = GoogleFonts.rubik(
   fontSize: 10.sp,
   color: kColorWhite,
   fontWeight: FontWeight.w400,
+);
+TextStyle kStyleBlackRubik24700 = GoogleFonts.rubik(
+  fontSize: 24.sp,
+  color: kColorBlack,
+  fontWeight: FontWeight.w700,
 );

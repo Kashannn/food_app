@@ -14,6 +14,7 @@ import '../view/authentication_screens/splash_screen.dart';
 import '../view/authentication_screens/welcome_screen.dart';
 import '../view/dashboard_screens/dashboard.dart';
 import '../view/dashboard_screens/discovery_screen.dart';
+import '../view/discovery_screen/Groceries_Screen/Alcampo_dashboard.dart';
 import '../view/discovery_screen/Groceries_Screen/premimum_groceries.dart';
 import '../view/discovery_screen/premimum_restaurants/premimum_restaurants.dart';
 import '../view/discovery_screen/premimum_restaurants/subway.dart';
@@ -87,6 +88,10 @@ class AppRoutes {
     GetPage(
       name: '/PremimumGroceries',
       page: () => const PremimumGroceries(),
+    ),
+    GetPage(
+      name: '/AlcampoDashboard',
+      page: () => const AlcampoDashboard(),
     ),
 
 

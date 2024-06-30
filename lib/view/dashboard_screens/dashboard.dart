@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import '../../utils/categories.dart';
-import '../../utils/custom_bottom_navigation_bar.dart';
-import '../../utils/custom_searchbar.dart';
-import '../../utils/menu_adress_bar.dart';
-import '../../utils/promotion_card.dart';
-import '../../utils/top_restrurant.dart';
-import '../../utils/topbar.dart';
+import '../../utils/components/categories.dart';
+import '../../utils/components/custom_bottom_navigation_bar.dart';
+import '../../utils/components/custom_searchbar.dart';
+import '../../utils/components/menu_adress_bar.dart';
+import '../../utils/components/promotion_card.dart';
+import '../../utils/components/top_restrurant.dart';
+import '../../utils/components/topbar.dart';
 
 class Dashboard extends StatelessWidget {
   const Dashboard({super.key});

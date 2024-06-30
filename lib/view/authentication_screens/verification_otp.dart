@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_otp_text_field/flutter_otp_text_field.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:food_app/utils/custom_button.dart';
+import 'package:food_app/utils/components/custom_button.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 
 import '../../app_constants/app_constants.dart';
-import '../../utils/Custom _app_bar.dart';
+import '../../utils/components/Custom _app_bar.dart';
 
 class VerificationOTP extends StatefulWidget {
   const VerificationOTP({super.key});

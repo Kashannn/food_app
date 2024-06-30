@@ -3,10 +3,10 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:food_app/app_constants/app_constants.dart';
 import 'package:food_app/app_constants/images_constants.dart';
-import 'package:food_app/utils/custom_button.dart';
+import 'package:food_app/utils/components/custom_button.dart';
 import 'package:get/get.dart';
 
-import '../../utils/Custom _app_bar.dart';
+import '../../utils/components/Custom _app_bar.dart';
 
 class WelcomeScreen extends StatefulWidget {
   const WelcomeScreen({super.key});
